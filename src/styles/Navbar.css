@@ -1,0 +1,98 @@
+/* ================= Navbar ================= */
+.scrolled {
+  background-color: #1E2120;
+  color: #fff;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: background-color 1.2s, color 0.3s;
+  z-index: 1000;
+}
+
+.navbar {
+  background: linear-gradient(135deg, rgba(30, 33, 32, 0.95) 0%, rgba(45, 48, 47, 0.9) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link {
+  color: #FFD700 !important;
+  font-family: Kanit, sans-serif;
+}
+
+.nav-link:hover {
+  color: #f4ededd0;
+}
+
+.nav-item:hover {
+  transform: scale(1.02);
+}
+
+.nav-item {
+  margin-right: 0.9rem;
+  padding-top: 2px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.6), 2px 2px 4px rgba(0,0,0,0.8);
+  transition: all 0.4s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.15) translateY(-5px);
+  text-shadow: 0 0 20px rgba(255,255,255,0.8);
+}
+
+.active-link {
+  color: #00C853 !important;
+  background: rgba(0, 200, 83, 0.1);
+  border: 1px solid rgba(0, 200, 83, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 200, 83, 0.2);
+  transform: translateY(-2px);
+}
+
+ 
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .nav-link {
+    color: #FFD700 !important;
+    padding: 12px 20px !important;
+    margin: 2px 0;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background: rgba(0,200,83,0.1);
+    color: #00C853 !important;
+  }
+
+  .active-link {
+    background: rgba(0,200,83,0.15);
+    border: 1px solid rgba(0,200,83,0.4);
+    color: #00C853 !important;
+  }
+}
+
+ 
